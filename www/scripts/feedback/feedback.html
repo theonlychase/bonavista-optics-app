@@ -1,4 +1,4 @@
-<ion-view view-title="Leave feedback">
+<ion-view view-title="Contact Lens Refills">
 	<ion-nav-buttons side="right">
 		<button class="button button-clear icon ion-paper-airplane"
 			ng-click="sendMail()"></button>
@@ -8,12 +8,12 @@
 		<div class="list">
 
           <label class="item item-input">
-            <span class="input-label">From*</span>
+            <span class="input-label">Your Email*</span>
             <input type="email" autofocus placeholder="example@gmail.com" ng-model="MailData.senderEmail">
           </label>
 
           <label class="item item-input">
-            <span class="input-label">Name*</span>
+            <span class="input-label">Your Name*</span>
             <input type="text" ng-model="MailData.senderName">
           </label>
 
@@ -23,37 +23,9 @@
           </label>
 
           <label class="item item-input no-border-bottom">
-            <textarea placeholder="Compose email" style="height: 25vh !important" ng-model="MailData.html"></textarea>
+            <textarea placeholder="Compose message" style="height: 25vh !important" ng-model="MailData.html"></textarea>
           </label>
 
         </div>
-		<!--<ion-list>
-			<label class="item item-input item-stacked-label">
-				<span class="input-label">Your message:</span>
-				<textarea rows="8" ng-model="vm.comment"></textarea>
-			</label>
-
-			<ion-item>
-				<img ng-if="!!vm.image" ng-src="{{vm.image}}" width="100%" />
-				<button ng-if="!vm.image" class="button button-block button-calm" ng-click="vm.addImage()">
-					Add image
-				</button>
-				<button ng-if="!!vm.image" class="button button-block button-energized" ng-click="vm.removeImage()">
-					Remove image
-				</button>
-			</ion-item>
-
-			<ion-item>
-				<video ng-show="!!vm.video" id="video" width="100%" controls type="video/quicktime">
-					<source id="source" type="video/mp4"/>
-				</video>
-				<button ng-if="!vm.video" class="button button-block button-balanced" ng-click="vm.addVideo()">
-					Add video
-				</button>
-				<button ng-if="!!vm.video" class="button button-block button-energized" ng-click="vm.removeVideo()">
-					Remove video
-				</button>
-			</ion-item>
-		</ion-list>-->
 	</ion-content>
 </ion-view>
