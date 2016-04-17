@@ -1,9 +1,6 @@
 (function () {
 	'use strict';
 
-	// NodeMailer-Mailgun Server-Side
-	var SERVER_SIDE_URL = "<SERVER-SIDE-URL>"
-
 	angular
 		.module('barebone.feedback')
 		.factory('feedbackService', feedbackService);
@@ -12,6 +9,9 @@
 
 	/* @ngInject */
 	function feedbackService($q, $http) {
+		
+		// NodeMailer-Mailgun Server-Side
+		var SERVER_SIDE_URL = ENV.apiEndpoint;
 		
 		 var self = this;
 

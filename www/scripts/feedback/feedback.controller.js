@@ -43,9 +43,9 @@
 		// init maildata
 		function initMailData() {
 			$scope.MailData = {
-			senderName: "",
-			senderEmail: "",
-			receiverEmail: "",
+			senderName: "Chase Isley",
+			senderEmail: "chaseisley@live.com",
+			receiverEmail: "isleychase@gmail.com",
 			html: "", // optionally, add html formatting
 			};
 		};
