@@ -1,0 +1,20 @@
+{
+  "name": "node-mailer-mailgun-api",
+  "version": "0.0.0",
+  "description": "NodeMailer with Mailgun API",
+  "main": "server.js",
+  "repository": "",
+  "author": "Noodlio (www.noodl.io) <noodlio@seipel-ibisevic.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "express-session": "~1.11.3",
+    "mongoose": "~3.6.13",
+    "querystring": "~0.2.0",
+    "request": "~2.65.0",
+    "socket.io": "~0.9.14",
+    "nodemailer-mailgun-transport": "~1.0.1",
+    "nodemailer": "~2.0.0"
+  }
+}
