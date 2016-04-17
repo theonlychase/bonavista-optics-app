@@ -5,10 +5,10 @@
 		.module('barebone.feedback')
 		.factory('feedbackService', feedbackService);
 
-	feedbackService.$inject = [];
+	feedbackService.$inject = ['$q', '$http', 'ENV'];
 
 	/* @ngInject */
-	function feedbackService($q, $http) {
+	function feedbackService($q, $http, ENV) {
 		
 		// NodeMailer-Mailgun Server-Side
 		var SERVER_SIDE_URL = ENV.apiEndpoint;
