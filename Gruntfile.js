@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 				constants: {
 					ENV: {
 						name: 'development',
-						apiEndpoint: 'http://localhost:8100',
+						apiEndpoint: 'http://localhost:9311',
 						youtubeKey: 'AIzaSyDael5MmCQa1GKQNKQYypmBeB08GATgSEo',
 						ionicPrivateKey: '5bbb94bf3072600eccce5db04c2e394b4bed4ff345407617', //'c63b22cd7330a4a9d5e526bfcd74891a59fd5c23d1d81239',
 						ionicPublicKey: '131a8bcfc22a9af963482705ae2555706e639d9d6de2bb7c', //'04dee953a91ef3857f1c8a7cf4748ecee375848681f7e833',
