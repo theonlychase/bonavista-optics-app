@@ -10,10 +10,10 @@
 	/* @ngInject */
 	function homeDataService() {
 		return {
-			phoneNumber: '+306973216110',
-			email: 'skounis@gmail.com',
-			officeLocation: '37.7736854,-122.421034',
-			facebookPage: 'https://www.facebook.com/ionicframework'
+			phoneNumber: '+18009239730',
+			email: 'optician1@bonavistaoptics.com',
+			officeLocation: '34.062707,-118.353911',
+			facebookPage: 'https://www.facebook.com/bonavistaoptics'
 		};
 	}
 })();
