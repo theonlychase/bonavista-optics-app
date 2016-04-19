@@ -79,8 +79,7 @@
 			senderName: "",
 			senderEmail: "",
 			receiverEmail: "isleychase@gmail.com",
-			html: "", // optionally, add html formatting
-			date: $scope.date
+			html: "" // optionally, add html formatting
 			};
 		};
 
