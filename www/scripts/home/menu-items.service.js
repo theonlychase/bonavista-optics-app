@@ -14,9 +14,9 @@
 			path: 'feedback',
 			icon: 'ion-eye'
 		}, {
-			title: 'Products',
+			title: 'Schedule Appointment',
 			path: 'products-extended',
-			icon: 'ion-android-cart'
+			icon: 'ion-calendar'
 		}, {
 			title: 'Galleries',
 			path: 'galleries',
