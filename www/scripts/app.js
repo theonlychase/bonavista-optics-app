@@ -13,6 +13,7 @@ angular.module('starter', [
 	'barebone.common',
 	'barebone.infrastructure',
 	// 'barebone.ad',
+	'barebone.appointment',
 	'barebone.apprate',
 	// 'barebone.shopping-cart',
 	// 'barebone.products',
