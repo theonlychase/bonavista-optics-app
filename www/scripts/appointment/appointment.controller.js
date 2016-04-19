@@ -24,21 +24,18 @@
 		$scope.onezoneDatepicker = {
 			date: date, // MANDATORY                     
 			mondayFirst: false,                
-			months: months,                    
-			daysOfTheWeek: daysOfTheWeek,     
-			startDate: startDate,             
-			endDate: endDate,                    
+			months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],                    
+			daysOfTheWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],     
+			startDate: new Date(1989, 1, 26),             
+			endDate: new Date(2024, 1, 26),                    
 			disablePastDays: false,
 			disableSwipe: false,
 			disableWeekend: false,
-			disableDates: disableDates,
-			disableDaysOfWeek: disableDaysOfWeek,
 			showDatepicker: false,
 			showTodayButton: true,
 			calendarMode: false,
 			hideCancelButton: true,
 			hideSetButton: false,
-			highlights: highlights
 			// callback: function(value){
 			// 	// your code
 			// }

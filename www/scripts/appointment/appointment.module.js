@@ -3,7 +3,8 @@
 
 	angular
 		.module('barebone.appointment', [
-			'ionic'
+			'ionic',
+			'onezone-datepicker'
 		])
 		.config(function($stateProvider) {
 			$stateProvider
@@ -13,7 +14,7 @@
 					views: {
 						'menuContent': {
 							templateUrl: 'scripts/appointment/appointment.html',
-							controller: 'ContactLensRefillController as vm'
+							controller: 'appointmentController as vm'
 						}
 					}
 				});

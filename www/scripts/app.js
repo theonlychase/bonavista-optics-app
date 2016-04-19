@@ -10,7 +10,6 @@ angular.module('starter', [
 	'config',
 	'ionic.service.core',
 	'ionic.service.push',
-	'onezone-datepicker',
 	'barebone.common',
 	'barebone.infrastructure',
 	// 'barebone.ad',
