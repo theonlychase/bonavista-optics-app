@@ -10,6 +10,7 @@ angular.module('starter', [
 	'config',
 	'ionic.service.core',
 	'ionic.service.push',
+	'onezone-datepicker',
 	'barebone.common',
 	'barebone.infrastructure',
 	// 'barebone.ad',
@@ -48,8 +49,7 @@ angular.module('starter', [
 	// 'barebone.stripe',
 	'gMaps',
 	'ngCordova',
-	'ngCordovaOauth',
-	'onezone-datepicker'
+	'ngCordovaOauth'
 ])
 
 .value('_', window._)

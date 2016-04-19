@@ -13,6 +13,14 @@
 		appointmentService, $ionicActionSheet, $scope, $ionicLoading, $timeout) {
 		var currentPosition = []; 
 		
+		var currentDate = new Date();
+		var date = new Date(currentDate.getFullYear(), currentDate.getMonth(), 23);
+		$scope.date = date;
+		
+		$scope.myFunction = function (date) {
+			alert(date);
+		};
+		
 		$scope.onezoneDatepicker = {
 			date: date, // MANDATORY                     
 			mondayFirst: false,                
@@ -25,15 +33,19 @@
 			disableWeekend: false,
 			disableDates: disableDates,
 			disableDaysOfWeek: disableDaysOfWeek,
-			showDatepicker: true,
+			showDatepicker: false,
 			showTodayButton: true,
 			calendarMode: false,
-			hideCancelButton: false,
+			hideCancelButton: true,
 			hideSetButton: false,
-			highlights: highlights,
-			callback: function(value){
-				// your code
-			}
+			highlights: highlights
+			// callback: function(value){
+			// 	// your code
+			// }
+		};
+		
+		$scope.showDatepicker = function () {
+			$scope.onezoneDatepicker.showDatepicker = true;
 		};
 		
 		// send email, use as input $scope.MailData

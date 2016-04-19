@@ -21,16 +21,27 @@
             <span class="input-label">Subject</span>
             <input type="text" ng-model="MailData.subject">
           </label>
+          
+          <div class="padding">
+            <onezone-datepicker datepicker-object="onezoneDatepicker">
+              <button class="button button-block button-outline button-positive show-onezone-datepicker">
+                  {{onezoneDatepicker.date | date:'dd MMMM yyyy'}} 
+              </button>
+            </onezone-datepicker>
+          </div>
+          
+          <div class="padding">
+              <button class="button button-block button-outline button-positive" ng-click="showDatepicker()">
+                  Please Select a Refill Date
+              </button>
+          </div>
 
           <label class="item item-input no-border-bottom">
             <textarea placeholder="Compose message" style="height: 25vh !important" ng-model="MailData.html"></textarea>
           </label>
-
+          
+          
         </div>
-        <onezone-datepicker datepicker-object="onezoneDatepicker">
-            <button class="button button-block button-outline button-positive show-onezone-datepicker">
-                {{onezoneDatepicker.date | date:'dd MMMM yyyy'}} 
-            </button>
-        </onezone-datepicker>
+        
 	</ion-content>
 </ion-view>
