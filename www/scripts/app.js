@@ -48,7 +48,8 @@ angular.module('starter', [
 	// 'barebone.stripe',
 	'gMaps',
 	'ngCordova',
-	'ngCordovaOauth'
+	'ngCordovaOauth',
+	'onezone-datepicker'
 ])
 
 .value('_', window._)
