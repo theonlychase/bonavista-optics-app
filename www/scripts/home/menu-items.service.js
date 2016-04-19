@@ -10,9 +10,9 @@
 	/* @ngInject */
 	function menuItems() {
 		var data = [{
-			title: 'News',
-			path: 'articles',
-			icon: 'ion-speakerphone'
+			title: 'Contact Lens Refills',
+			path: 'feedback',
+			icon: 'ion-eye'
 		}, {
 			title: 'Products',
 			path: 'products-extended',
