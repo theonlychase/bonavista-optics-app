@@ -11,11 +11,11 @@
 	function menuItems() {
 		var data = [{
 			title: 'Contact Lens Refills',
-			path: 'feedback',
+			path: 'contact-lens-refill',
 			icon: 'ion-eye'
 		}, {
 			title: 'Schedule Appointment',
-			path: 'products-extended',
+			path: 'appointment',
 			icon: 'ion-calendar'
 		}, {
 			title: 'Galleries',
