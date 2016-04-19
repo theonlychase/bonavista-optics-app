@@ -2,15 +2,15 @@
 	'use strict';
 
 	angular
-		.module('barebone.feedback')
-		.controller('FeedbackController', FeedbackController);
+		.module('barebone.contact-lens-refill')
+		.controller('ContactLensRefillController', ContactLensRefillController);
 
-	FeedbackController.$inject = [
-		'feedbackService', '$ionicActionSheet', '$scope', '$ionicLoading', '$timeout'];
+	ContactLensRefillController.$inject = [
+		'contactLensRefillService', '$ionicActionSheet', '$scope', '$ionicLoading', '$timeout'];
 
 	/* @ngInject */
-	function FeedbackController(
-		feedbackService, $ionicActionSheet, $scope, $ionicLoading, $timeout) {
+	function ContactLensRefillController(
+		contactLensRefillService, $ionicActionSheet, $scope, $ionicLoading, $timeout) {
 		var currentPosition = []; 
 		
 		// send email, use as input $scope.MailData
@@ -21,7 +21,7 @@
 
 			// send
 			showMessage('Sending...');
-			feedbackService.sendMail($scope.MailData).then(
+			contactLensRefillService.sendMail($scope.MailData).then(
 				function(success){
 				showMessage('Mail sent!', 1500);
 				initMailData();

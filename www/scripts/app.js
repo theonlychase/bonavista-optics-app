@@ -36,7 +36,7 @@ angular.module('starter', [
 	'barebone.chats',
 	// 'barebone.stream',
 	'barebone.events',
-	'barebone.feedback',
+	'barebone.contact-lens-refill',
 	// 'barebone.sqlite',
 	// 'barebone.oauth',
 	// 'barebone.lo-storage',

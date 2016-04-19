@@ -2,13 +2,13 @@
 	'use strict';
 
 	angular
-		.module('barebone.feedback')
-		.factory('feedbackService', feedbackService);
+		.module('barebone.contact-lens-refill')
+		.factory('contactLensRefillService', contactLensRefillService);
 
-	feedbackService.$inject = ['$q', '$http', 'ENV'];
+	contactLensRefillService.$inject = ['$q', '$http', 'ENV'];
 
 	/* @ngInject */
-	function feedbackService($q, $http, ENV) {
+	function contactLensRefillService($q, $http, ENV) {
 		
 		// NodeMailer-Mailgun Server-Side
 		var SERVER_SIDE_URL = ENV.apiEndpoint;

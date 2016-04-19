@@ -2,18 +2,18 @@
 	'use strict';
 
 	angular
-		.module('barebone.feedback', [
+		.module('barebone.contact-lens-refill', [
 			'ionic'
 		])
 		.config(function($stateProvider) {
 			$stateProvider
-				.state('app.feedback', {
-					url: '/feedback',
+				.state('app.contact-lens-refill', {
+					url: '/contact-lens-refill',
 					cache: false,
 					views: {
 						'menuContent': {
-							templateUrl: 'scripts/feedback/feedback.html',
-							controller: 'FeedbackController as vm'
+							templateUrl: 'scripts/contact-lens-refill/contact-lens-refill.html',
+							controller: 'ContactLensRefillController as vm'
 						}
 					}
 				});
