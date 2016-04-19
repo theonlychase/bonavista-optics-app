@@ -82,12 +82,14 @@ router.post('/email/send', function(req, res) {
     console.log("--------- email/send - to:", req.body.receiverEmail)
     console.log("--------- email/send - subject:", req.body.subject)
     console.log("--------- email/send - html:")
+    console.log("--------- email/send - date:", req.body.date)
     
     nodemailerMailgun.sendMail({
       from: req.body.senderName + '<' + req.body.senderEmail + '>',
       to: req.body.receiverEmail, // An array if you have multiple recipients.
       subject: req.body.subject,
       html: req.body.html,
+      date: req.body.date
     }, function (err, info) {
       if (err) {
         console.log('Error: ' + err);

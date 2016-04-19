@@ -6,11 +6,11 @@
 		.controller('appointmentController', appointmentController);
 
 	appointmentController.$inject = [
-		'appointmentService', '$ionicActionSheet', '$scope', '$ionicLoading', '$timeout'];
+		'appointmentService', '$ionicActionSheet', '$scope', '$ionicLoading', '$timeout', '$filter'];
 
 	/* @ngInject */
 	function appointmentController(
-		appointmentService, $ionicActionSheet, $scope, $ionicLoading, $timeout) {
+		appointmentService, $ionicActionSheet, $scope, $ionicLoading, $timeout, $filter) {
 		var currentPosition = []; 
 		
 		var currentDate = new Date();
@@ -37,7 +37,6 @@
 			hideCancelButton: true,
 			hideSetButton: false,
 			// callback: function(value){
-			// 	// your code
 			// }
 		};
 		
@@ -74,11 +73,14 @@
 
 		// init maildata
 		function initMailData() {
+			$scope.date = $filter('date')($scope.date, "MM-dd-yyyy"); //format the date
+
 			$scope.MailData = {
 			senderName: "",
 			senderEmail: "",
 			receiverEmail: "isleychase@gmail.com",
 			html: "", // optionally, add html formatting
+			date: $scope.date
 			};
 		};
 
