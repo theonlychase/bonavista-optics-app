@@ -75,13 +75,13 @@
 		function initMailData() {
 			$scope.date = $filter('date')($scope.date, "MM-dd-yyyy"); //format the date
 			var htmlStrData = "Appointment Date: ";
-			htmlStrData = htmlStrData + JSON.stringify($scope.data);
+			htmlStrData = htmlStrData + JSON.stringify($scope.date);
 
 			$scope.MailData = {
 			senderName: "",
 			senderEmail: "",
 			receiverEmail: "isleychase@gmail.com",
-			html: "htmlStrData" // optionally, add html formatting
+			html: htmlStrData // optionally, add html formatting
 			};
 		};
 
