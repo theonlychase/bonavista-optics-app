@@ -14,7 +14,7 @@
 		var currentPosition = []; 
 		
 		var currentDate = new Date();
-		var date = new Date(currentDate.getFullYear(), currentDate.getMonth(), 23);
+		var date = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
 		$scope.date = date;
 		
 		$scope.myFunction = function (date) {
@@ -73,16 +73,19 @@
 
 		// init maildata
 		function initMailData() {
-			$scope.date = $filter('date')($scope.date, "MM-dd-yyyy"); //format the date
-			var htmlStrData = "Appointment Date: ";
-			htmlStrData = htmlStrData + JSON.stringify($scope.date);
-
-			$scope.MailData = {
-			senderName: "",
-			senderEmail: "",
-			receiverEmail: "isleychase@gmail.com",
-			html: htmlStrData // optionally, add html formatting
-			};
+			
+			$scope.$watch("onezoneDatepicker.date", function(newValue) { //watching the changed variable
+				var formatDate = $filter('date')(newValue, "MM-dd-yyyy"); //formatting the date change
+				var htmlStrData = "Appointment Date: ";
+				htmlStrData = htmlStrData + JSON.stringify(formatDate);	//converting to string			
+			
+				$scope.MailData = {
+				senderName: "",
+				senderEmail: "",
+				receiverEmail: "isleychase@gmail.com",
+				html: htmlStrData // optionally, add html formatting
+				};
+			});
 		};
 
 		// fn show loading dialog
