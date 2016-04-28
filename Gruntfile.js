@@ -77,8 +77,8 @@ module.exports = function(grunt) {
 						// https://instagram.com/developer/
 						instagramAppId: '2998ca20ed924ca3be22907c6ae77363', //'ab4ccebff87a46e789e231bed83685e4'
 						firebaseUrl: 'barebone-ionic.firebaseio.com', //'https://barebone-chat.firebaseio.com/',
-						iosUrl: 'com.titaniumtemplates.barebone-ionic',
-						androidUrl: 'market://details?id=com.titaniumtemplates.barebone-ionic',
+						iosUrl: 'com',
+						androidUrl: 'market://#',
 						usesUntilRatePrompt: 4,
 						androidPublisherKey: 'ca-app-pub-3965039466794589/2790557649',
 						//'ca-app-pub-5273644196186544/3459900111',

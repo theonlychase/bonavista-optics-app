@@ -31,7 +31,7 @@ angular.module('starter', [
 	// 'barebone.vimeo',
 	// 'barebone.facebook',
 	// 'barebone.instagram',
-	'barebone.elements',
+	// 'barebone.elements',
 	// 'barebone.position',
 	// 'barebone.charts',
 	'barebone.chats',
