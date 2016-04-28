@@ -38,7 +38,8 @@ var bodyParser = require('body-parser');
 
 var app         = express();
 var router      = express.Router();              // get an instance of the express Router
-var port        = process.env.PORT || 9311;
+// var port        = process.env.PORT || 9311;
+var port        = process.env.PORT || 80;
 
 // init nodemailer and mailgun transport
 var nodemailer = require('nodemailer');
