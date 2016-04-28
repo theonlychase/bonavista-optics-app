@@ -9,7 +9,7 @@
 
 	/* @ngInject */
 	function galleriesService($http, $q) {
-		var url = 'http://skounis.s3.amazonaws.com/mobile-apps/barebone-glossy/galleries.json';
+		var url = 'http://s3.amazonaws.com/business-app/galleries.json';
 		var result = [];
 
 		var service = {
