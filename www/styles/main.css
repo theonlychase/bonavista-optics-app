@@ -9898,9 +9898,9 @@ progress {
   background: none;
 }
 .button.button-positive.button-outline {
-  border-color: #1f7f5c;
+  border-color: #118ba4;
   background: transparent;
-  color: #1f7f5c;
+  color: #118ba4;
 }
 .button.button-positive.button-outline.active, .button.button-positive.button-outline.activated {
   background-color: #1f7f5c;
@@ -11378,4 +11378,29 @@ td-card img {
 }
 #take-away-map-view .gmaps {
   height: 50%;
+}
+
+/* Custom CSS */
+.onezone-datepicker-active-day, .onezone-datepicker-active-day:hover {
+  border: 2px solid #118ba4 !important;
+}
+
+.onezone-datepicker-selection-button {
+  color: #118ba4 !important;
+}
+
+.onezone-datepicker-navigation-arrow {
+  color: #118ba4 !important;
+}
+
+.onezone-datepicker-button {
+  border-bottom: 1px solid #118ba4 !important;
+}
+
+.onezone-datepicker-button:after {
+  border-bottom: 6px solid #118ba4 !important;
+}
+
+.onezone-datepicker-modal-item.onezone-datepicker-modal-item-active {
+  background-color: #118ba4 !important;
 }
